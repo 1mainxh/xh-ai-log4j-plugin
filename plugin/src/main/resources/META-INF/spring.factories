@@ -1,0 +1,2 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+com.diylog4j.config.Log4jPluginAutoConfiguration

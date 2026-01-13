@@ -1,0 +1,25 @@
+{
+  "enabled": true,
+  "interfaces": [
+    {
+      "path": "/api/hello",
+      "method": "GET",
+      "logLevel": "INFO",
+      "count": 5,
+      "applyToRemote": true,
+      "remoteServiceName": "user-service"
+    },
+    {
+      "path": "/api/user/*",
+      "method": "POST",
+      "logLevel": "DEBUG",
+      "count": 3,
+      "applyToRemote": true
+    }
+  ],
+  "logPaths": {
+    "ROOT": "logs/application.log",
+    "com.diylog4j": "logs/diylog4j.log",
+    "feign.user-service": "logs/feign-user-service.log"
+  }
+}

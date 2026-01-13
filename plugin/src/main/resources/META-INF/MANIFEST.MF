@@ -1,0 +1,5 @@
+Manifest-Version: 1.0
+Premain-Class: com.diylog4j.agent.Log4jAgent
+Agent-Class: com.diylog4j.agent.Log4jAgent
+Can-Redefine-Classes: true
+Can-Retransform-Classes: true

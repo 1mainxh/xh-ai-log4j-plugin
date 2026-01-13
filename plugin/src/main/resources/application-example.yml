@@ -1,0 +1,26 @@
+# Log4j Plugin 配置示例
+xh:
+  log4j:
+    plugin:
+      # 是否启用插件
+      enabled: true
+      # Nacos 配置 DataId
+      nacos-data-id: log4j-plugin-config
+      # Nacos 配置 Group
+      nacos-group: DEFAULT_GROUP
+      # 远程调用类型：rpc 或 feign
+      remote-type: feign
+      # 默认日志输出路径
+      default-log-path: logs
+      # 默认日志文件名
+      default-log-file-name: application.log
+
+# Nacos 配置（如果使用 Nacos）
+spring:
+  cloud:
+    nacos:
+      config:
+        server-addr: localhost:8848
+        namespace: 
+        group: DEFAULT_GROUP
+        file-extension: yml
